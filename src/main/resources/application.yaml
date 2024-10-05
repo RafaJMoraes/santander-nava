@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: santander
+  datasource:
+    url: jdbc:postgres://localhost:5432/logistics-santander
+    username: santander
+    password: santander

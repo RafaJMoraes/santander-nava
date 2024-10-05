@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=logistics-santander'
+      - 'POSTGRES_PASSWORD=santander'
+      - 'POSTGRES_USER=santander'
+    ports:
+      - '5432:5432'
