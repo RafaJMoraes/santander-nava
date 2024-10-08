@@ -2,6 +2,7 @@ package com.nava.santander.controller.controller;
 
 
 import com.nava.santander.client.viacep.dto.AddressDto;
+import com.nava.santander.controller.dtos.GoogleTestDto;
 import com.nava.santander.services.CalculateShippingService;
 import com.nava.santander.services.impls.CalculateShippingServicesImpl;
 import lombok.RequiredArgsConstructor;
@@ -24,8 +25,8 @@ public class CalculateShippingController {
         return ResponseEntity.status(HttpStatus.OK).body(service.calculate(cep));
     }
 
-    @PostMapping(path = "/calculate")
-    ResponseEntity<AddressDto> calculate(@PathVariable String cep) {
-        return ResponseEntity.status(HttpStatus.OK).body(service.calculate(cep));
+    @GetMapping(path = "/distance")
+    ResponseEntity<Object> google(@RequestBody GoogleTestDto dto) {
+        return ResponseEntity.status(HttpStatus.OK).body(service.test(dto));
     }
 }
