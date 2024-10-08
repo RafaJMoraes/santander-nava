@@ -7,3 +7,10 @@ services:
       - 'POSTGRES_USER=santander'
     ports:
       - '5432:5432'
+  wiremock:
+    image: 'wiremock/wiremock:latest'
+    container_name: wiremock_shipping
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./wiremock:/home/wiremock

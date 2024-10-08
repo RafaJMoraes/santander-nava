@@ -1,0 +1,13 @@
+{
+  "request":{
+    "method": "GET",
+    "urlPath": "/api/v1/shipping/17500100"
+  },
+  "response":{
+    "status": 200,
+    "body": "\"state\":\"SP\",\n\"city\":\"Praia Grande\",\n\"neighborhood\":\"Guilhermina\",\n\"street\":\"Rua Nicarágua\",\n\"service\":\"open-cep\",\n\"location\":{\n\"type\":\"Point\",\n\"coordinates\":{\n\"longitude\":\"-46.4333544\",\n\"latitude\":\"-24.010098\"\n}\n}",
+    "headers":{
+      "Content-Type": "application/json"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/api/v1/shipping/distance",
+    "queryParameters": {
+      "origins": {
+        "equalTo": "-22.2384746,-49.9837158"
+      },
+      "destinations": {
+        "equalTo": "-24.010098,-46.999999"
+      },
+      "key": {
+        "equalTo": "AIzaSyDek4hAoFRZRHgVW7kpjLFbaMipopq6GHs"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "body": "{ \"origin_addresses\": [\"Rua Mário Martins da Silva Santos, 999 - Marília, SP, 17526-702, Brazil\"], \"destination_addresses\": [\"R. Nicarágua, 675 - Guilhermina, Praia Grande - SP, 11702-240, Brazil\"], \"rows\": [{ \"elements\": [{ \"distance\": { \"text\": \"515 km\", \"value\": 515031 }, \"duration\": { \"text\": \"6 hours 0 mins\", \"value\": 21598 }, \"status\": \"OK\" }]}], \"status\": \"OK\" }",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
