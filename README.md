@@ -53,9 +53,9 @@ Não será aceito contribuições nesse momento.
 
 ### Licença
 
-Este projeto foi desenvolvido exclusivamente para o desafio [Desafio Santander] e não está disponível para uso comercial ou redistribuição sem a autorização prévia. Para mais informações, entre em contato com o organizador do desafio ou com o(s) autor(es).
+Este projeto foi desenvolvido exclusivamente para o desafio Santander-Nava e não está disponível para uso comercial ou redistribuição sem a autorização prévia. Para mais informações, entre em contato com o organizador do desafio ou com o(s) autor(es).
 ###### Propriedade Intelectual
-Todo o conteúdo, incluindo o código-fonte, design, e documentação, é de propriedade intelectual do(s) autor(es) ou do organizador do desafio. Qualquer uso ou redistribuição deste material, parcial ou total, sem a devida autorização está estritamente proibido.
+Todo o conteúdo, incluindo o código-fonte, design, e documentação, é de propriedade intelectual do autor. Qualquer uso ou redistribuição deste material, parcial ou total, sem a devida autorização está estritamente proibido.
 
 
 

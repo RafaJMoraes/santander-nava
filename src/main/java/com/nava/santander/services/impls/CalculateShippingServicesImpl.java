@@ -15,7 +15,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-
+@RequiredArgsConstructor
 @Log4j2
 @Service
 public class CalculateShippingServicesImpl implements CalculateShippingService {
