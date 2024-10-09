@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.math.MathContext;
 import java.math.RoundingMode;
 
 
@@ -43,10 +44,10 @@ public class CubageFreightCalculator implements FreightCalculator {
         double totalCost = costPackage + costFix + costDistance;
 
         return new FreightResponse(
-                BigDecimal.valueOf(totalCost).setScale(2, RoundingMode.HALF_UP),
-                BigDecimal.valueOf(costFix).setScale(2,RoundingMode.HALF_UP),
-                BigDecimal.valueOf(costDistance).setScale(2,RoundingMode.HALF_UP),
-                BigDecimal.valueOf(costPackage).setScale(2, RoundingMode.HALF_UP),
+                BigDecimal.valueOf(totalCost).round(new MathContext(2, RoundingMode.HALF_UP)),
+                BigDecimal.valueOf(costFix).round(new MathContext(2,RoundingMode.HALF_UP)),
+                BigDecimal.valueOf(costDistance).round(new MathContext(2,RoundingMode.HALF_UP)),
+                BigDecimal.valueOf(costPackage).round(new MathContext(2, RoundingMode.HALF_UP)),
                 estimateDays);
     }
 }
