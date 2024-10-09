@@ -17,18 +17,6 @@ public class CalculateShippingController {
 
     private final CalculateShippingService service;
 
-
-//    @GetMapping(path = "/{cep}")
-//    ResponseEntity<CepBrazilResponse> validatedCEP(@PathVariable String cep) {
-//        return ResponseEntity.status(HttpStatus.OK).body(service.cepValidate(cep));
-//    }
-
-//    @GetMapping(path = "/distance")
-//    ResponseEntity<Object> calculateDistance(@RequestBody GoogleRequest dto) {
-//        return ResponseEntity.status(HttpStatus.OK).body(service.);
-//    }
-
-    //
     @Operation(summary = "Method to calculate Freight")
     @PostMapping(path = "/calculate")
     ResponseEntity<Object> calculateFreight(@RequestBody FreightRequest dto) {
