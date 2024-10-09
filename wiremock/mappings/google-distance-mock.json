@@ -10,7 +10,7 @@
         "equalTo": "-24.010098,-46.999999"
       },
       "key": {
-        "equalTo": "AIzaSyDek4hAoFRZRHgVW7kpjLFbaMipopq6GHs"
+        "equalTo": "${GOOGLE_API_KEY}"
       }
     }
   },
