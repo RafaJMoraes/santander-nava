@@ -1,5 +1,5 @@
 
-package com.nava.santander.client.google.dto;
+package com.nava.santander.infrastructure.google.dto;
 
 
 public record Element(Distance distance,

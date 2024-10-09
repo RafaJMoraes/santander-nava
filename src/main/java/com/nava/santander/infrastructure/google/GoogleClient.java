@@ -1,7 +1,7 @@
-package com.nava.santander.client.google;
+package com.nava.santander.infrastructure.google;
 
 
-import com.nava.santander.client.google.dto.GoogleDistanceDto;
+import com.nava.santander.infrastructure.google.dto.GoogleResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -11,6 +11,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface GoogleClient {
 
     @GetMapping(path = "", params = {"origins", "destinations", "key"})
-    GoogleDistanceDto getDistanceMatrix(@RequestParam("origins") String origin, @RequestParam("destinations") String destinations,
-                                        @RequestParam("key") String key);
+    GoogleResponse getDistanceMatrix(@RequestParam("origins") String origin, @RequestParam("destinations") String destinations,
+                                     @RequestParam("key") String key);
 }

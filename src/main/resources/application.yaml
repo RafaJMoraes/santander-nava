@@ -5,14 +5,40 @@ spring:
     url: jdbc:postgres://${BD_HOST}:${BD_PORT}/logistics-santander
     username: ${BD_USERNAME}
     password: ${BD_PASSWORD}
-  cloud:
-    openfeign:
-      circuitbreaker:
-        enabled: true
-        alphanumeric-ids:
-          enabled: true
+#  cloud:
+#    openfeign:
+#      circuitbreaker:
+#        enabled: true
+#        alphanumeric-ids:
+#          enabled: true
 
 google:
   maps:
     key: ${GOOGLE_MAPS_KEY}
+
+#springdoc:
+#  swagger-ui:
+#    url: /openapi/openapi.yaml
+#    enabled: true
+#    path: /swagger-ui.html
+#    version: 1.0.0
+#    display-request-duration: true
+#    groups-order: desc
+#    operations-sorter: method
+#    disable-swagger-default-url: true
+#    use-root-path: true
+#  api-docs:
+#    version: openapi_3_1
+#    path: /api-docs
+#  show-actuator: true
+#  group-configs:
+#    - group: shipping
+#      paths-to-match:
+#        - /shipping/**
+#  cache:
+#    disabled: true
+#  use-management-port: true
+
+server:
+  port: 8080
 

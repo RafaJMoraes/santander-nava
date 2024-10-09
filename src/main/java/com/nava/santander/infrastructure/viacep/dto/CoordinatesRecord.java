@@ -1,4 +1,4 @@
-package com.nava.santander.client.viacep.dto;
+package com.nava.santander.infrastructure.viacep.dto;
 
 public record CoordinatesRecord(double longitude, double latitude) {
 }

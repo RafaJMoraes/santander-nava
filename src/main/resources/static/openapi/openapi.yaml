@@ -1,0 +1,138 @@
+openapi: 3.0.0
+info:
+  title: Freight Calculation API
+  description: API to calculate freight costs based on address and package details
+  version: 1.0.0
+paths:
+  /api/v1/shipping/calculate:
+    post:
+      summary: Calculate freight cost
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FreightRequest'
+      responses:
+        '200':
+          description: Successful freight calculation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FreightResponse'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+components:
+  schemas:
+    FreightRequest:
+      type: object
+      properties:
+        adresses:
+          type: object
+          properties:
+            originLatitude:
+              type: string
+              example: "-22.2384746"
+            originLongitude:
+              type: string
+              example: "-49.9837158"
+            destinationLatitude:
+              type: string
+              example: "-24.010098"
+            destinationLongitude:
+              type: string
+              example: "-46.4333544"
+        package:
+          type: array
+          items:
+            type: object
+            properties:
+              height:
+                type: integer
+                example: 789
+              width:
+                type: integer
+                example: 456
+              depth:
+                type: integer
+                example: 123
+              weight:
+                type: integer
+                example: 1000
+        value:
+          type: integer
+          example: 1000
+    FreightResponse:
+      type: object
+      properties:
+        freight:
+          type: object
+          properties:
+            value:
+              type: number
+              format: float
+              example: 150.75
+            currency:
+              type: string
+              example: "BRL"
+            origin:
+              type: object
+              properties:
+                latitude:
+                  type: string
+                  example: "-22.2384746"
+                longitude:
+                  type: string
+                  example: "-49.9837158"
+            destination:
+              type: object
+              properties:
+                latitude:
+                  type: string
+                  example: "-24.010098"
+                longitude:
+                  type: string
+                  example: "-46.4333544"
+            packageDetails:
+              type: object
+              properties:
+                height:
+                  type: integer
+                  example: 789
+                width:
+                  type: integer
+                  example: 456
+                depth:
+                  type: integer
+                  example: 123
+                weight:
+                  type: integer
+                  example: 1000
+            deliveryTimeEstimate:
+              type: string
+              example: "3-5 dias úteis"
+            additionalInfo:
+              type: string
+              example: "Frete calculado com base nas dimensões e distância."
+        status:
+          type: string
+          example: "success"
+        message:
+          type: string
+          example: "Frete calculado com sucesso."
+    ErrorResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          example: "error"
+        message:
+          type: string
+          example: "Dados inválidos. Verifique as informações de endereço e pacote."
+        code:
+          type: integer
+          example: 400

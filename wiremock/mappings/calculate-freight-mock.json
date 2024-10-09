@@ -1,0 +1,37 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPath": "/calculate-freight",
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "$.adresses[*]",
+        "contains": {
+          "originLatitude": "-22.2384746",
+          "originLongitude": "-49.9837158",
+          "destinationLatitude": "-24.010098",
+          "destinationLongitude": "-46.4333544"
+        }
+      },
+      {
+        "matchesJsonPath": "$.package[0]",
+        "contains": {
+          "height": 789,
+          "width": 456,
+          "depth": 123,
+          "weigth": 1000
+        }
+      },
+      {
+        "matchesJsonPath": "$.value",
+        "equals": 1000
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "body": "{\n\"freight\":{\n \"value\": 150.75,\n \"currency\":\"BRL\",\n \"deliveryTimeEstimate\":\"3-5 dias úteis\"\n},\n\"status\":\"success\",\n\"message\":\"Frete calculado com sucesso.\"\n }",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

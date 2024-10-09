@@ -1,6 +1,6 @@
-package com.nava.santander.client.viacep.dto;
+package com.nava.santander.infrastructure.viacep.dto;
 
-public record AddressDto(
+public record CepBrazilResponse(
         String cep,
         String state,
         String city,

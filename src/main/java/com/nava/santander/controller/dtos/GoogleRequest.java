@@ -1,6 +1,10 @@
 package com.nava.santander.controller.dtos;
 
-public record GoogleTestDto(
+
+import lombok.Builder;
+
+@Builder
+public record GoogleRequest(
         String originLatitude,
         String originLongitude,
         String destinationLatitude,

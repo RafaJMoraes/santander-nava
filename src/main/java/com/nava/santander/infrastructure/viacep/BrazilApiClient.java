@@ -1,7 +1,7 @@
-package com.nava.santander.client.viacep;
+package com.nava.santander.infrastructure.viacep;
 
 
-import com.nava.santander.client.viacep.dto.AddressDto;
+import com.nava.santander.infrastructure.viacep.dto.CepBrazilResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,6 +11,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface BrazilApiClient {
 
     @GetMapping(path = "{cep}")
-    AddressDto validateCep(@PathVariable("cep") String cep);
+    CepBrazilResponse validateCep(@PathVariable("cep") String cep);
 
 }
