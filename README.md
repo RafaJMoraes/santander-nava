@@ -1,6 +1,6 @@
 
 # API de Cálculo de Frete
-<h6>Desafio santander</h6>
+###### Desafio santander
 
 Este projeto tem como objetivo fornecer uma API para calcular o frete de mercadorias, levando em consideração cubagem, peso e valor do produto. A API utiliza o Brasil API para validação de CEPs e o Google Maps Distance Matrix para calcular distâncias entre pontos de entrega.
 
@@ -49,12 +49,13 @@ A aplicação leva em conta os seguintes pontos:
 O diagrama acima demonstra a arquitetura da aplicação, onde a API realiza chamadas externas ao Brasil API para validação de CEPs e ao Google Maps Distance Matrix para cálculo da rota. O banco de dados PostgreSQL é utilizado para armazenar logs dos endereços  e a integração com o WireMock permite a simulação de respostas durante os testes.
 
 ### Contribuições
-Pull requests são bem-vindos. Para grandes mudanças, abra uma issue primeiro para discutir o que você gostaria de mudar. Certifique-se de atualizar os testes conforme necessário.
+Não será aceito contribuições nesse momento.
 
 ### Licença
 
-Este projeto está licenciado sob os termos da licença MIT.
-
+Este projeto foi desenvolvido exclusivamente para o desafio [Desafio Santander] e não está disponível para uso comercial ou redistribuição sem a autorização prévia. Para mais informações, entre em contato com o organizador do desafio ou com o(s) autor(es).
+###### Propriedade Intelectual
+Todo o conteúdo, incluindo o código-fonte, design, e documentação, é de propriedade intelectual do(s) autor(es) ou do organizador do desafio. Qualquer uso ou redistribuição deste material, parcial ou total, sem a devida autorização está estritamente proibido.
 
 
 
