@@ -2,7 +2,7 @@ spring:
   application:
     name: santander
   datasource:
-    url: jdbc:postgresql://localhost:5432/logistics-santander
+    url: jdbc:postgresql://postgres:5432/logistics-santander
     username: santander
     password: santander
     driver-class-name: org.postgresql.Driver
@@ -15,13 +15,6 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
-
-#  cloud:
-#    openfeign:
-#      circuitbreaker:
-#        enabled: true
-#        alphanumeric-ids:
-#          enabled: true
 
 google:
   maps:
