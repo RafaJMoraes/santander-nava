@@ -49,17 +49,17 @@ A aplicação leva em conta os seguintes pontos:
    docker compose up --build
 
 
-### Desenho da Arquitetura
+## Desenho da Arquitetura
 ![Arquitetura do Projeto](readme/arch.png)
 
 ### Composição da Arquitetura
 
 O diagrama acima demonstra a arquitetura da aplicação, onde a API realiza chamadas externas ao Brasil API para validação de CEPs e ao Google Maps Distance Matrix para cálculo da rota. O banco de dados PostgreSQL é utilizado para armazenar logs dos endereços  e a integração com o WireMock permite a simulação de respostas durante os testes.
 
-### Contribuições
+## Contribuições
 Não será aceito contribuições nesse momento.
 
-### Licença
+## Licença
 
 Este projeto foi desenvolvido exclusivamente para o desafio Santander-Nava e não está disponível para uso comercial ou redistribuição sem a autorização prévia. Para mais informações, entre em contato com o organizador do desafio ou com o(s) autor(es).
 ###### Propriedade Intelectual
