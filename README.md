@@ -28,7 +28,7 @@ A aplicação leva em conta os seguintes pontos:
 - Docker
 - PostgreSQL
 - WireMock
-- Google Maps API Key
+- Google Maps Distance Matrix
 
 ## Instalação
 
