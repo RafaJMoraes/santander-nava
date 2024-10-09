@@ -34,6 +34,8 @@ public class CepServiceImpl implements CepService {
         } catch (FeignException.NotFound e) {
             log.error("CEP not found: {}",e.getMessage());
             throw  e;
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
     }
 }

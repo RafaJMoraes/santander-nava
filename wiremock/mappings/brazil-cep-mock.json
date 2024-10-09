@@ -1,11 +1,11 @@
 {
   "request":{
     "method": "GET",
-    "urlPath": "/api/v1/shipping/17500100"
+    "urlPath": "/api/v1/address/17500100"
   },
   "response":{
     "status": 200,
-    "body": "\"state\":\"SP\",\n\"city\":\"Praia Grande\",\n\"neighborhood\":\"Guilhermina\",\n\"street\":\"Rua Nicarágua\",\n\"service\":\"open-cep\",\n\"location\":{\n\"type\":\"Point\",\n\"coordinates\":{\n\"longitude\":\"-46.4333544\",\n\"latitude\":\"-24.010098\"\n}\n}",
+    "body": "{\n  \"message\": \"Success!\",\n  \"code\": 200,\n  \"data\": {\n    \"cep\": \"17500100\",\n    \"street\": \"Rua Coronel Galdino de Almeida\",\n    \"state\": \"SP\",\n    \"latitude\": \"-22.219331\",\n    \"longitude\": \"-49.9484207\"\n  },\n  \"errors\": null\n}",
     "headers":{
       "Content-Type": "application/json"
     }

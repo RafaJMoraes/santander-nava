@@ -1,7 +1,7 @@
 {
   "request": {
     "method": "GET",
-    "urlPath": "/api/v1/shipping/distance",
+    "urlPath": "/api/v1/shipping/calculate",
     "queryParameters": {
       "origins": {
         "equalTo": "-22.2384746,-49.9837158"

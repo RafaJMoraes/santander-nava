@@ -13,18 +13,19 @@ import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 
 @Log4j2
-@RequiredArgsConstructor
 @Service
 public class CalculateShippingServicesImpl implements CalculateShippingService {
 
-    @Autowired
     private final FreightCalculator calculator;
 
-    private final BrazilApiClient client;
-    private final GoogleClient googleClient;
+    @Autowired
+    CalculateShippingServicesImpl(CubageFreightCalculator calculator) {
+        this.calculator = Optional.ofNullable(calculator).orElse(new CubageFreightCalculator());
+    }
 
     /**
      * @param freightRequest request

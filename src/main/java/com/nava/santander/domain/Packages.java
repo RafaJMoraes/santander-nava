@@ -13,7 +13,7 @@ public record Packages(
 
     @JsonIgnore
     public double getVolume() {
-        return (depth / 100.0) * (weight / 100.0) * (height / 100.0);
+        return (depth / 100.00) * (weight / 100.00) * (height / 100.00);
     }
     @JsonIgnore
     public double getWeightKg() {

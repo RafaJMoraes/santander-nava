@@ -29,7 +29,7 @@
   },
   "response": {
     "status": 200,
-    "body": "{\n\"freight\":{\n \"value\": 150.75,\n \"currency\":\"BRL\",\n \"deliveryTimeEstimate\":\"3-5 dias úteis\"\n},\n\"status\":\"success\",\n\"message\":\"Frete calculado com sucesso.\"\n }",
+    "body": "{\n \"cep\": \"11702240\",\n \"state\": \"SP\",\n \"city\": \"Praia Grande\",\n \"neighborhood\": \"Guilhermina\",\n \"street\": \"Rua Nicarágua\",\n \"service\": \"open-cep\",\n \"location\": {\n  \"type\": \"Point\",\n  \"coordinates\": {\n\"longitude\": \"-46.4333544\",\n\"latitude\": \"-24.010098\"\n }\n }\n}",
     "headers": {
       "Content-Type": "application/json"
     }

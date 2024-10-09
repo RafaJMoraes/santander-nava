@@ -2,7 +2,6 @@ package com.nava.santander.controller;
 
 
 import com.nava.santander.controller.dtos.FreightRequest;
-import com.nava.santander.infrastructure.viacep.dto.CepBrazilResponse;
 import com.nava.santander.services.CalculateShippingService;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;

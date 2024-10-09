@@ -1,5 +1,7 @@
 package com.nava.santander.controller.dtos;
 
+import java.math.BigDecimal;
+
 public record FreightResponse(
-        double totalCost, double costFix, double costDistance, double costPackage, double estimateDyas) {
+        BigDecimal totalCost, BigDecimal costFix, BigDecimal costDistance, BigDecimal costPackage, double estimateDays) {
 }

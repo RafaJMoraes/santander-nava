@@ -7,13 +7,14 @@ import com.nava.santander.infrastructure.google.GoogleClient;
 import com.nava.santander.infrastructure.google.dto.GoogleResponse;
 import com.nava.santander.services.DistanceService;
 import com.nava.santander.utils.StringUtils;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-
+@RequiredArgsConstructor
 @Service
 public class DistanceServiceImpl implements DistanceService {
-    private GoogleClient googleClient;
+    private final GoogleClient googleClient;
 
     @Value("${google.maps.key}")
     private String googleKey;
