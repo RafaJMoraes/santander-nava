@@ -34,7 +34,7 @@ A aplicação leva em conta os seguintes pontos:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/usuario/projeto-frete.git
+   git clone https://github.com/RafaJMoraes/santander-nava.git
 2. Configure o ambiente com Docker:
    ```bash
    docker compose up -d
