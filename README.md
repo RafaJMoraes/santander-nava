@@ -9,9 +9,10 @@ Este projeto tem como objetivo fornecer uma API para calcular o frete de mercado
 2. [Considerações](#considerações)
 3. [Requisitos](#requisitos)
 4. [Instalação](#instalação)
-5. [Desenho da Arquitetura](#desenho-da-arquitetura)
-6. [Contribuições](#contribuições)
-7. [Licença](#licença)
+5. [Como usar](#como-usar)
+6. [Desenho da Arquitetura](#desenho-da-arquitetura)
+7. [Contribuições](#contribuições)
+8. [Licença](#licença)
 
 ## Considerações
 
@@ -40,6 +41,13 @@ A aplicação leva em conta os seguintes pontos:
 3. Execute a aplicação:
    ```bash
    ./mvnw spring-boot:run
+
+## Como usar
+1. Instale o docker:
+2. Rode o comando:
+   ```bash
+   docker compose up --build
+
 
 ### Desenho da Arquitetura
 ![Arquitetura do Projeto](readme/arch.png)
